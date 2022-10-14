@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Filename : "
+read filename
+echo "#!/bin/bash" > $filename
+echo "Answer command : "
+read answer
+echo "$answer" >> $filename
+chmod u+x $filename
+cat $filename
